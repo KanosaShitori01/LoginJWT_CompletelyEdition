@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  opacity: 0;
+  animation: appe 1s forwards;
+}
+.home{
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  transition: .5s;
+  animation: chage .2s ease-in;
+}
+@keyframes chage {
+  0%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes appe {
+  100%{
+    opacity: 1;
+  }
+}
